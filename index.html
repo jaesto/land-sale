@@ -10,6 +10,8 @@
        TO CUSTOMIZE THIS PAGE:
        1. Search for every instance of text inside [BRACKETS] and replace it
        2. Find "FORMSPREE_FORM_ID" and replace with your Formspree ID
+          (NOTE: the form action is already wired to formspree.io/f/mqenarnr —
+           confirm that form belongs to your account and notifications are on)
        3. Add your own photos by replacing the placeholder <img> tags
        See the setup guide for full step-by-step instructions.
   ═══════════════════════════════════════════════════════════ -->
@@ -714,7 +716,7 @@
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">�M</div>
+        <div class="feature-icon">🗺️</div>
         <div>
           <h3>Location</h3>
           <p>[e.g. ~12 miles from [nearest town]. About 45 minutes from [nearest city]. GPS coordinates: [LAT, LON].]</p>
@@ -888,10 +890,10 @@
             ║  FORMSPREE SETUP (5 minutes, completely free)        ║
             ║                                                      ║
             ║  1. Go to https://formspree.io and sign up free      ║
-            ║  2. Click "New Form" and name it "Land Inquiry"      "║
-            ║  3. Formspree will give you a form ID like "xrgvabcd"║
-            ║  4. Replace FORMSPRDE_FORM_ID below with that ID      ║
-            ║  5. Set your notification email in Formspree settings║
+            ║  2. Click "New Form" and name it "Land Inquiry"      ║
+            ║  3. Formspree will give you a form ID like "xrgvabcd" ║
+            ║  4. Replace the ID in the form action below with it   ║
+            ║  5. Set your notification email in Formspree settings ║
             ╚══════════════════════════════════════════════════════╝
           -->
 
@@ -1043,7 +1045,7 @@
           alert('Something went wrong. Please email me directly at jaecestokes@gmail.com');
         }
       } catch {
-        btn.textContent = 'Send My Inquiry →";
+        btn.textContent = 'Send My Inquiry →';
         btn.disabled = false;
         alert('Could not connect. Please email me directly at jaecestokes@gmail.com');
       }
